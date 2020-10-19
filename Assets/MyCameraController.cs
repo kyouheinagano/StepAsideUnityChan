@@ -8,9 +8,7 @@ public class MyCameraController : MonoBehaviour
     private GameObject unitychan;
     //Unityちゃんとカメラの距離
     private float difference;
-    //画面外の定義
     
-
     void Start()
     {
         //Unityちゃんのオブジェクトを取得
@@ -25,8 +23,5 @@ public class MyCameraController : MonoBehaviour
         //Unityちゃんの位置に合わせてカメラの位置を移動
         this.transform.position = new Vector3(0, this.transform.position.y, this.unitychan.transform.position.z - difference);
     }
-
-    //Unityちゃんが通り過ぎた時アイテムを破棄
-
 }
 
